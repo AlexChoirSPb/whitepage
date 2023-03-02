@@ -1,0 +1,227 @@
+@media (min-width: 576px) {
+  .form,
+  .thnk-popup {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 10;
+  }
+
+  .thank-page {
+    width: 30vw;
+    height: 10vw;
+    background-color: #ff5c00;
+    margin: 15vw auto;
+    border-radius: 2vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .thank-title {
+    color: #fff;
+    text-align: center;
+    font-size: 1.7vw;
+    margin: 0.5vw;
+    font-weight: 300;
+  }
+
+  .contact-area {
+    position: relative;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    margin:auto;
+  }
+
+  .contact-form {
+    width: 40vw;
+    margin-top: 5vw;
+    background-color: #ff5c00;
+    border-radius: 1.5vw;
+  }
+
+  .form-col {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .form-col h2 {
+    font-size: 2rem;
+    padding-top: 2vw;
+    text-align: center;
+    margin-bottom: 2vw;
+  }
+
+  input[type='text'],
+  input[type='email'],
+  input[type='tel'],
+  textarea {
+    width: 70%;
+    font-size: 1em;
+    margin-top: 0.5vw;
+    margin-left: 15%;
+    padding: 0.5vw;
+    border-radius: 0.2vw;
+    border-style: none;
+    border-bottom: 0.2vw solid #a56d4c;
+    margin-bottom: 1vw;
+  }
+
+  select {
+    width: 30%;
+    font-size: 1em;
+    margin-top: 0.5vw;
+    margin-left: 15vw;
+    padding: 0.5vw;
+    border-radius: 0.2vw;
+    border-style: none;
+    border-bottom: 0.2vw solid #a56d4c;
+    margin-bottom: 1vw;
+  }
+
+  label {
+    margin-left: 15%;
+    font-weight: 500;
+    text-transform: uppercase;
+  }
+
+  input::placeholder,
+  textarea::placeholder {
+    font-weight: 300;
+  }
+
+  .form-accept {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1vw;
+  }
+
+  .button-group {
+    display: flex;
+  }
+
+  .u-label-acc {
+    margin-left: 0;
+  }
+
+  input[type='checkbox'] {
+    margin-left: 15%;
+    margin-right: 1vw;
+    width: 1.1vw;
+    height: 1.1vw;
+  }
+
+  input[type='submit'] {
+    cursor: pointer;
+    background: #000;
+    color: #fff;
+    height: 3vw;
+    width: 10vw;
+    border-style: none;
+    border-radius: 1vw;
+    font-size: 1.2vw;
+    margin-left: 15%;
+    margin-right: 10vw;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 0.5em;
+    margin-bottom: 2vw;
+    transition: color 0.5s ease;
+    transition: background-color 0.5s ease;
+
+  }
+
+  .button-group a {
+    margin-right: 2vw;
+    transition: fill 0.3s ease;
+  }
+
+  .button-group a:hover {
+    transition: fill 0.3s ease;
+    fill: #fff;
+  }
+
+  input[type='submit']:hover {
+    background-color: #fff;
+    color: #000;
+    transition: color 0.5s ease;
+    transition: background-color 0.5s ease;
+  }
+
+  .button-close {
+    color: #fff;
+    font-size: 2em;
+    position: absolute;
+    top:5%;
+    right: 5%;
+    background: none;
+    border: none;
+    transition: color 0.5s ease;
+  }
+
+  .button-close:hover {
+    transition: color 0.5s ease;
+    color: #ff5c00;
+  }
+
+
+
+
+
+  .form-accept a {
+    transition: color 0.5s ease;
+  }
+
+  .form-accept a:hover {
+    color:#000;
+    transition: color 0.5s ease;
+  }
+
+
+  /*POPUP ANIMATION*/
+
+  /*Popup button*/
+  .popup {
+      display: inline-block;
+      cursor: pointer;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+  }
+
+  /* The actual popup */
+  .hidden {
+    visibility: hidden;
+  }
+
+  /* Toggle this class - hide and show the popup */
+  .show {
+      visibility: visible;
+      animation: fadeIn 0.3s;
+  }
+
+  /* Add animation (fade in the popup) */
+
+  @keyframes fadeIn {
+      from {opacity: 0;}
+      to {opacity: 1;}
+  }
+
+  .hide {
+      visibility: hidden;
+      animation: fadeIn 0.3s;
+  }
+
+  /* Add animation (fade in the popup) */
+
+  @keyframes fadeIn {
+      from {opacity: 0;}
+      to {opacity: 1;}
+  }
+}

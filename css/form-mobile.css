@@ -1,0 +1,230 @@
+@media (max-width: 576px) {
+
+
+.form,
+.thnk-popup {
+  position: fixed;
+  overflow: auto;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 10;
+}
+
+.thank-page {
+  width: 80vw;
+  height: 40vw;
+  background-color: #ff5c00;
+  margin: 30vh auto;
+  border-radius: 5vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.thank-title {
+  color: #fff;
+  text-align: center;
+  font-size: 2rem;
+  margin: 5vw;
+  font-weight: 300;
+}
+
+.contact-area {
+  position: relative;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin:auto;
+}
+
+.contact-form {
+  width: 85vw;
+  background-color: #ff5c00;
+  border-radius: 3vw;
+  margin-top: 12vw;
+  margin-left: 0;
+  margin-right: 0;
+  margin-bottom: 0;
+}
+
+.form-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-col h2 {
+  font-size: 2.5rem;
+  padding-top: 2vw;
+  text-align: center;
+  margin-bottom: 2vw;
+}
+
+input[type='text'],
+input[type='email'],
+input[type='tel'],
+textarea {
+  width: 80%;
+  font-size: 1.3rem;
+  margin-top: 2vw;
+  margin-left: 10vw;
+  padding: 2vw;
+  border-radius: 1vw;
+  border-style: none;
+  border-bottom: 0.5vw solid #a56d4c;
+  margin-bottom: 1.5vw;
+}
+
+select {
+  width: 40%;
+  font-size: 1.3rem;
+  margin-top: 1vw;
+  margin-left: 10vw;
+  padding: 1vw;
+  border-radius: 0.5vw;
+  border-style: none;
+  border-bottom: 0.5vw solid #a56d4c;
+  margin-bottom: 1vw;
+}
+
+label {
+  font-size: 1.3rem;
+  margin-left: 10vw;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+input::placeholder,
+textarea::placeholder {
+  font-weight: 300;
+}
+
+.form-accept {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2vw;
+}
+
+.button-group {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2vw;
+}
+
+.u-label-acc {
+  margin-left: 0;
+}
+
+input[type='checkbox'] {
+  margin-left: 10vw;
+  margin-right: 2vw;
+  width: 5vw;
+  height: 5vw;
+}
+
+input[type='submit'] {
+  cursor: pointer;
+  background: #000;
+  color: #fff;
+  height: 10vw;
+  width: 30vw;
+  border-style: none;
+  border-radius: 1vw;
+  font-size: 1.2rem;
+  margin-left: 15%;
+  margin-right: 10vw;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 0.5em;
+  margin-bottom: 2vw;
+  transition: all 0.5s ease;
+}
+
+input[type='submit']:hover {
+  background: #d4b88e;
+  transition: all 0.5s ease;
+}
+
+  .button-group a {
+    margin-right: 4vw;
+    transition: fill 0.3s ease;
+  }
+
+  .button-group a:hover {
+    transition: fill 0.3s ease;
+    fill: #fff;
+  }
+
+.button-close {
+  color: #fff;
+  font-size: 2.5rem;
+  position: absolute;
+  top:2%;
+  right: 5%;
+  background: none;
+  border: none;
+  transition: all 0.5s ease;
+  z-index: 1000;
+}
+
+.button-close:hover {
+  color: #ff5c00;
+}
+  .form-accept a {
+    transition: color 0.5s ease;
+  }
+
+  .form-accept a:hover {
+    color:#000;
+    transition: color 0.5s ease;
+  }
+
+
+
+
+/*POPUP ANIMATION*/
+
+/*Popup button*/
+.popup {
+    display: inline-block;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* The actual popup */
+.hidden {
+  visibility: hidden;
+}
+
+/* Toggle this class - hide and show the popup */
+.show {
+    visibility: visible;
+    animation: fadeIn 0.3s;
+}
+
+/* Add animation (fade in the popup) */
+
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+.hide {
+    visibility: hidden;
+    animation: fadeIn 0.3s;
+}
+
+/* Add animation (fade in the popup) */
+
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
